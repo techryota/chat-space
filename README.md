@@ -13,7 +13,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false, unique: true, index|
+|name|string|null: false, unique: true, index|
 |email|string|null: false, unique: true|
 |password|string|null: false, unique: true|
 
@@ -26,7 +26,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :chats
@@ -37,7 +37,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
