@@ -3,12 +3,12 @@
 .Contents
   .Contents__left
     .Contents__left__top
-      test-user
+      = current_user.name
       .Contents__left__top__icon
-        =link_to "" do
+        =link_to do
           = fa_icon 'edit'
-        =link_to "" do
-          = fa_icon 'cog'
+        =link_to edit_user_path(current_user) do
+          = fa_icon 'cog', class: 'icon'
     .Contents__left__bottom
       .Contents__left__bottom__h
         test-group

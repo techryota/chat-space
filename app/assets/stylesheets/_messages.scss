@@ -1,6 +1,6 @@
 @import "group-name";
 @import "group-message";
-@import "user";
+@import "user-name";
 @import "chat";
 @import "date";
 @import "variable";
@@ -81,7 +81,7 @@
       &__user {
         display: flex;
         &__name {
-          @include user();
+          @include user-name();
         }
         &__date {
           @include date();
