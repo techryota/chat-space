@@ -1,8 +1,0 @@
-@import "variable";
-
-@mixin user() {
-  font-size: 16px;
-  font-weight: bold;
-  color: $chatBlackColor;
-  padding-bottom: 10px;
-}
