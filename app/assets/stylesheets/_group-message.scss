@@ -1,0 +1,8 @@
+@import "variable";
+
+@mixin group-message() {
+  font-size: 11px;
+  font-style: bold;
+  color: $groupWhiteColor;
+  padding-bottom: 40px;
+}
