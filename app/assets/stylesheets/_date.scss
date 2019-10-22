@@ -1,0 +1,7 @@
+@import "variable";
+
+@mixin date() {
+  font-size: 12px;
+  color: $memberGrayColor;
+  padding-left: 10px;
+}
