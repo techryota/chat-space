@@ -1,58 +1,58 @@
-.Header
+.header
   グループを作成しました
-.Contents
-  .Contents__left
-    .Contents__left__top
+.contents
+  .contents__left
+    .contents__left__top
       = current_user.name
-      .Contents__left__top__icon
-        =link_to do
+      .contents__left__top__icon
+        =link_to new_group_path do
           = fa_icon 'edit'
         =link_to edit_user_path(current_user) do
           = fa_icon 'cog', class: 'icon'
-    .Contents__left__bottom
-      .Contents__left__bottom__h
+    .contents__left__bottom
+      .contents__left__bottom__h
         test-group
-      .Contents__left__bottom__p
+      .contents__left__bottom__p
         さようなら!
-      .Contents__left__bottom__h
+      .contents__left__bottom__h
         sample-group
-      .Contents__left__bottom__p
+      .contents__left__bottom__p
         hello!
-      .Contents__left__bottom__h
+      .contents__left__bottom__h
         example
-      .Contents__left__bottom__p
+      .contents__left__bottom__p
         まだメッセージがありません
-  .Contents__right
-    .Contents__right__header
-      .Contents__right__header__group
-        .Contents__right__header__group__name
+  .contents__right
+    .contents__right__header
+      .contents__right__header__group
+        .contents__right__header__group__name
           test-group
-        .Contents__right__header__group__member
+        .contents__right__header__group__member
           Member : test-user     
       =link_to "", class: "Contents__right__header__edit" do
         Edit
-    .Contents__right__main
-      .Contents__right__main__user
-        .Contents__right__main__user__name
+    .contents__right__main
+      .contents__right__main__user
+        .contents__right__main__user__name
           test-user
-        .Contents__right__main__user__date
+        .contents__right__main__user__date
           2019/10/21(Mon) 10:59:30
-      .Contents__right__main__chat
+      .contents__right__main__chat
         こんにちは！
-      .Contents__right__main__user
-        .Contents__right__main__user__name
+      .contents__right__main__user
+        .contents__right__main__user__name
           test-user
-        .Contents__right__main__user__date
+        .contents__right__main__user__date
           2019/10/21(Mon) 11:59:30
-      .Contents__right__main__chat
+      .contents__right__main__chat
         さようなら！
-    .Contents__right__footer
-      %form.Contents__right__footer__input
-        .Contents__right__footer__input__chat
-          %input.Contents__right__footer__input__chat__text{name: "chat", placeholder: "type a message", type: "text"}
-          %label.Contents__right__footer__input__chat__icon{for: "upload-icon"}
+    .contents__right__footer
+      %form.contents__right__footer__input
+        .contents__right__footer__input__chat
+          %input.contents__right__footer__input__chat__text{name: "chat", placeholder: "type a message", type: "text"}
+          %label.contents__right__footer__input__chat__icon{for: "upload-icon"}
             %i.fa.fa-picture-o
             %input#upload-icon{name: "picture", type: "file"}/
-        %input.Contents__right__footer__input__send{name: "send", type: "submit", value: "Send"}
+        %input.contents__right__footer__input__send{name: "send", type: "submit", value: "Send"}
           
       
