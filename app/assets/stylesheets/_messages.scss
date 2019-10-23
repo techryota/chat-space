@@ -5,7 +5,7 @@
 @import "date";
 @import "variable";
 
-.Header {
+.header {
   background-color: $editBlueColor;
   color: $groupWhiteColor;
   height: 24px;
@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.Contents {
+.contents {
   width: 100%;
   &__left {
     float: left;
