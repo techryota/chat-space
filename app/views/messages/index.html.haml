@@ -1,58 +1,56 @@
-.header
-  グループを作成しました
-.contents
-  .contents__left
-    .contents__left__top
-      = current_user.name
-      .contents__left__top__icon
-        =link_to new_group_path do
-          = fa_icon 'edit'
-        =link_to edit_user_path(current_user) do
-          = fa_icon 'cog', class: 'icon'
-    .contents__left__bottom
-      .contents__left__bottom__h
-        test-group
-      .contents__left__bottom__p
-        さようなら!
-      .contents__left__bottom__h
-        sample-group
-      .contents__left__bottom__p
-        hello!
-      .contents__left__bottom__h
-        example
-      .contents__left__bottom__p
-        まだメッセージがありません
-  .contents__right
-    .contents__right__header
-      .contents__right__header__group
-        .contents__right__header__group__name
-          test-group
-        .contents__right__header__group__member
-          Member : test-user     
-      =link_to "", class: "Contents__right__header__edit" do
-        Edit
-    .contents__right__main
-      .contents__right__main__user
-        .contents__right__main__user__name
-          test-user
-        .contents__right__main__user__date
-          2019/10/21(Mon) 10:59:30
-      .contents__right__main__chat
-        こんにちは！
-      .contents__right__main__user
-        .contents__right__main__user__name
-          test-user
-        .contents__right__main__user__date
-          2019/10/21(Mon) 11:59:30
-      .contents__right__main__chat
-        さようなら！
-    .contents__right__footer
-      %form.contents__right__footer__input
-        .contents__right__footer__input__chat
-          %input.contents__right__footer__input__chat__text{name: "chat", placeholder: "type a message", type: "text"}
-          %label.contents__right__footer__input__chat__icon{for: "upload-icon"}
-            %i.fa.fa-picture-o
-            %input#upload-icon{name: "picture", type: "file"}/
-        %input.contents__right__footer__input__send{name: "send", type: "submit", value: "Send"}
-          
-      
+.wrapper
+
+  = render 'devise/shared/side_bar'
+
+  .chat
+    .header
+      .left-header
+        .left-header__title
+          グループ名
+        %ul.left-header__members
+          Member：
+          %li.member
+            メンバー名
+          %li.member
+            メンバー名
+          %li.member
+            メンバー名
+      .right-header
+        .right-header__button
+          Edit
+    .messages
+      .message
+        .upper-message
+          .upper-message__user-name
+            メンバー
+          .upper-message__date
+            2017/04/04
+        .lower-meesage
+          .lower-message__content
+            メッセージ
+      .message
+        .upper-message
+          .upper-message__user-name
+            メンバー
+          .upper-message__date
+            2017/04/04
+        .lower-meesage
+          .lower-message__content
+            メッセージ
+      .message
+        .upper-message
+          .upper-message__user-name
+            メンバー
+          .upper-message__date
+            2017/04/04
+        .lower-meesage
+          .lower-message__content
+            メッセージ
+    .form
+      %form
+        %input.form__message
+        .form__mask
+          %label.form__mask__image
+            = fa_icon 'picture-o', class: 'icon'
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
