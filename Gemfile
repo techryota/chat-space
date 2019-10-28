@@ -63,3 +63,4 @@ gem 'mini_magick'
 group :test, :development do 
   gem 'capybara'
 end
+gem 'pry-rails'
