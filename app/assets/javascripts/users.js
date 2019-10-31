@@ -11,7 +11,7 @@ $(function () {
 
   function addNoUser() {
     let html = `
-      <div class="chat-group-user clearfix">
+      <div class="chat-group-user clearfix" {data: {no: "user"}}>
         <p class="chat-group-user__name">ユーザーが見つかりません</p>
       </div>
     `;
